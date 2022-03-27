@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>API</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+		<h2>View your personality depending on your name</h2>
+
+	<section>
+		<div>
+			<input type="text" id="putName" placeholder="Enter Your Name">
+		</div>
+
+		<div>
+			<img src="mainPic.png" id="myImg" width="200px" height="200px" alt="img">
+		</div>
+
+		<button>Enter</button>
+	</section>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			$('button').click(function(){
+				const getName = $('#putName').val();
+				$('#myImg').attr('src',`https://joeschmoe.io/api/v1/${getName}`);
+			});
+
+		});
+	</script>
+</body>
+</html>

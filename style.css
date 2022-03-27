@@ -1,0 +1,49 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ body{background: #d42241;}
+
+h2{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 43px;
+}
+
+section{
+  /*background: orange;*/
+  margin: 10px auto;
+  display: grid;
+  justify-content: center;
+}
+
+input#putName {
+    width: 100%;
+    border: 2px solid white;
+    padding: 10px 0;
+    text-align: center;
+    background: #5500ad;
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+}
+input#putName:focus {
+    border: 2px solid #d654fc;
+}
+
+section div {
+    padding: 7px 0;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background: aquamarine;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover {
+    background: azure;
+}
